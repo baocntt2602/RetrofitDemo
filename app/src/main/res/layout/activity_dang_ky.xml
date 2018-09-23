@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKyActivity">
+    <TextView
+        android:id="@+id/txtDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang ky sinh vien"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3838ca"/>
+    <ImageView
+        android:id="@+id/imgDangKy"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/txtDangKy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_menu_report_image"
+        android:scaleType="fitXY"/>
+    <EditText
+        android:layout_below="@+id/imgDangKy"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Nhap vao tai khoan"
+        android:id="@+id/edtDangKyTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_below="@+id/edtDangKyTaiKhoan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Nhap vao mat khau"
+        android:id="@+id/edtDangKyMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnHuy"
+        android:text="Huy"
+        android:layout_below="@id/edtDangKyMatKhau"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnXacNhan"
+        android:text="Xac nhan"
+        android:layout_below="@id/edtDangKyMatKhau"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
